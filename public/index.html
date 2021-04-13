@@ -1,22 +1,656 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <h1>Hello World</h1>
-        <script src="" async defer></script>
-    </body>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="title icon" href="images/India.png">
+
+	<title>Sapkalwadi</title>
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+
+	<!-- jQuery Library -->
+	<script src="JS/jQuery.js"></script>
+
+	<!-- Bootstrap -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+
+
+	<!-- Online Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+	<!--    fontawesome-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="CSS/owl.carousel.min.css">
+	<link rel="stylesheet" href="CSS/owl.theme.default.min.css">
+
+
+</head>
+
+<body style="position: relative;">
+	<div id="pg" class="box-shadow">
+		<header id="head">
+			<div class="hero-div container-fluid header-section-bg">
+				<div class="container">
+
+					<div class="jumbotron justify-content-center text-center py-3">
+						<div class="page-title" style="color: #ff6600;">
+							<h1 class="display-2">सपकळवाडी</h1>
+							<p class="display-5">बारामती, पुणे.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div id="nav-large" class="nav-bigger-viewport">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light nav-menu sticky-top p-0">
+					<a class="navbar-brand p-1 d-lg-none" href="#" style="color:#ff6600;">सपकळवाडी</a>
+					<div class="p-1 py-lg-0 mr-0">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse p-3 p-lg-0" id="navbarNavAltMarkup">
+						<ul class="nav navbar-nav nav-pills sticky-top mx-auto justify-content-center navi" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">मुख पृष्ठ</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="about-village-tab" data-bs-toggle="tab" data-bs-target="#about-village" type="button" role="tab" aria-controls="profile" aria-selected="false">विकास कामे </button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="village-work-tab" data-bs-toggle="tab" data-bs-target="#village-worker" type="button" role="tab" aria-controls="profile" aria-selected="false">कार्यकारी मंडळ </button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#corona" type="button" role="tab" aria-controls="contact" aria-selected="false">कोरोना मोहीम </button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">संपर्क </button>
+							</li>
+						</ul>
+
+					</div>
+				</nav>
+			</div>
+
+		</header>
+
+		<section id="myTabContent" class="container-fluid tab-content">
+			<div class="container-lg">
+
+				<div class="tab-content" id="myTabContent">
+
+					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+						<!-- <div class="row row-cols-1 row-cols-lg-2">
+
+				  		<div class="col">
+				  			<div class="py-3">
+				  				<img src="images/sapkalwadi.jpeg" class="img-fluid box-shadow">
+				  			</div>
+
+				  		</div>
+
+				  		<div class="col py-3">
+				  			<h3 class="underline">सपकळवाडी  एक आगळेवेगळे आदर्श गाव..</h3>
+
+				  			<p class="py-3 ">छोटेसे पण सुंदर व आधुनिकीकरणाशी सांगड घालणारे इंदापूर तालुक्यातील एक गाव. इंदापुर पासून 3८ km व बारामती पासून फक्त १८ km अंतरावर सणसर-तावशी रोडवर सपकळवाडी गाव आहे.<br>
+				  			सपकळवाडी गावाची श्री. जोतिबा ही ग्रामदैवत असून, दर वर्षी देवाचा उत्सव मोठया आनंदाने साजरा केला जातो. इतर अनेक उत्सव जसे सार्वजनिक गणेशोत्सव ,शिवजयंती समस्त सपकळवाडी ग्रामस्थ एकत्रित रित्या साजरे करतात . सपकळवाडी गावचे एकूण क्षेत्रफळ अंदाजे २१८.२१ हेक्टर आहे. सपकळवाडी गावाची एकूण लोकसंख्या २०११ च्या जनगणनेनुसार १३०५ होती आणि अंदाजे २८० घरे आहेत. गाव समुद्र सपाटीपासून ४९३ मीटर उंचिवर आहे..</p>
+
+
+				  		</div>
+
+				  	</div>
+
+				  	<div class="row row-cols-1 row-cols-lg-2">
+
+				  		<div class="col py-3">
+				  			<p>सपकळवाडी गाव आज एक प्रगत गाव म्हणून बारामती मध्ये प्रसिद्ध असून त्याचे दाखले देणारे काही मुद्दे खालीलप्रमाणे,</p>
+					  		<ol>
+					  			<li> अंगणवाड्या : २ </li>
+					  			<li> जिल्हा परिषद प्राथमीक शाळा : २
+					  				<ol type="i">
+					  					<li>जिल्हापरीषद प्राथमीक शाळा सपकळवाडी</li>
+					  					<li>जिल्हा परिषद प्राथमीक शाळा संजयनगर</li>
+					  				</ol>
+					 			</li>
+					  			<li> प्राथमिक आरोग्य केंद्र : १ </li>
+					  			<li>वाचनालय : १</li>
+					  			<li>वित्त संस्था :  १</li>
+					 			<li>समाज मंदिर : १</li>
+					  			<li> सपकळवाडी विकास सोसायटी सपकळवाडी</li>
+					  			<li> व्यायामशाळा : १</li>
+					 			<li>शुध्द पाणी वाटप ए. टी. एम</li>
+					  			<li>गोबर गैस प्लान्ट : २५</li>
+					  			<li>सुसज्य स्मशानभुमी </li>
+								<li>सुसज्य पथ दिवे</li>
+					  			<li>गावातील नागरिकांसाठी बाकाची व्यवस्था</li>
+
+					  		</ol>
+				  		</div>
+
+				  		<div class="col py-3">
+				  			<div class="d-flex align-content-center align-self-center justify-content-center">
+				  				<p>YouTube:</p>
+				  				<iframe class="d-flex align-content-center align-items-center align-self-center box-shadow-2" width="500" height="350" src="https://www.youtube.com/embed/mTma-FjGkzE?autoplay=1&mute=1&loop=1" Set-Cookie: flavor=choco; SameSite=None; Secure>
+								</iframe>
+				  			</div>
+				  		</div>
+
+				  	</div> -->
+
+
+						<div class="d-flex justify-content-center">
+							<div class="py-3">
+								<img src="images/sapkalwadi.png" class="img-fluid box-shadow-2">
+							</div>
+						</div>
+
+						<div>
+
+							<div class="py-3">
+								<h3 class="underline text-justify">सपकळवाडी एक आगळेवेगळे आदर्श गाव..</h3>
+
+								<p class="py-3">छोटेसे पण सुंदर व आधुनिकीकरणाशी सांगड घालणारे इंदापूर तालुक्यातील एक गाव. इंदापुर पासून 3८ km व बारामती पासून फक्त १८ km अंतरावर सणसर-तावशी रोडवर सपकळवाडी गाव आहे.<br>
+									सपकळवाडी गावाची श्री. जोतिबा ही ग्रामदैवत असून, दर वर्षी देवाचा उत्सव मोठया आनंदाने साजरा केला जातो. इतर अनेक उत्सव जसे सार्वजनिक गणेशोत्सव ,शिवजयंती समस्त सपकळवाडी ग्रामस्थ एकत्रित रित्या साजरे करतात . सपकळवाडी गावचे एकूण क्षेत्रफळ
+									अंदाजे २१८.२१ हेक्टर आहे. सपकळवाडी गावाची एकूण लोकसंख्या २०११ च्या जनगणनेनुसार १३०५ होती आणि अंदाजे २८० घरे आहेत. गाव समुद्र सपाटीपासून ४९३ मीटर उंचिवर आहे..</p>
+
+
+							</div>
+
+						</div>
+
+						<div class="row row-cols-1 row-cols-lg-2">
+
+							<div class="col py-3">
+								<p>सपकळवाडी गाव आज एक प्रगत गाव म्हणून बारामती मध्ये प्रसिद्ध असून त्याचे दाखले देणारे काही मुद्दे खालीलप्रमाणे,</p>
+								<ol>
+									<li> अंगणवाड्या : २ </li>
+									<li> जिल्हा परिषद प्राथमीक शाळा : २
+										<ol type="i">
+											<li>जिल्हापरीषद प्राथमीक शाळा सपकळवाडी</li>
+											<li>जिल्हा परिषद प्राथमीक शाळा संजयनगर</li>
+										</ol>
+									</li>
+									<li> प्राथमिक आरोग्य केंद्र : १ </li>
+									<li>वाचनालय : १</li>
+									<li>वित्त संस्था : १</li>
+									<li>समाज मंदिर : १</li>
+									<li> सपकळवाडी विकास सोसायटी सपकळवाडी</li>
+									<li> व्यायामशाळा : १</li>
+									<li>शुध्द पाणी वाटप ए. टी. एम</li>
+									<li>गोबर गैस प्लान्ट : २५</li>
+									<li>सुसज्य स्मशानभुमी </li>
+									<li>सुसज्य पथ दिवे</li>
+									<li>गावातील नागरिकांसाठी बाकाची व्यवस्था</li>
+
+								</ol>
+							</div>
+
+							<div class="col py-3">
+								<div class="d-flex align-content-center align-self-center justify-content-center">
+									<!-- <p>YouTube:</p> -->
+									<iframe class="d-flex align-content-center align-items-center align-self-center map-border box-shadow" width="500" height="350" src="https://www.youtube.com/embed/mTma-FjGkzE?autoplay=1&mute=1&loop=1" Set-Cookie: flavor=choco;
+										SameSite=None; Secure>
+									</iframe>
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="container py-3">
+							<div id="map" class="py-5 text-center">
+								<h3 class="underline-2">गाव नकाशा</h3>
+								<div class="mapouter d-flex justify-content-center py-3">
+									<div class="gmap_canvas box-shadow-2"><iframe width="900" height="450" loading="lazy" id="gmap_canvas" src="https://maps.google.com/maps?q=Sapkalwadi,%20Pune&t=k&z=15&ie=UTF8&iwloc=&output=embed" scrolling="no" marginheight="0"
+											marginwidth="0"></iframe></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- ================================================================
+				  					    Home Tab End
+				  ================================================================ -->
+
+
+					<!-- ================================================================
+				  					    About Village Tab
+				  ================================================================ -->
+					<div class="tab-pane fade" id="about-village" role="tabpanel" aria-labelledby="contact-tab">
+
+						<div>
+
+							<div class="py-3">
+
+								<div class="owl-carousel owl-theme d-flex flex-column mr-md-5">
+
+									<div class="item card">
+										<img src="images/vachnalay.jpeg" class="card-img-top h-100">
+									</div>
+									<div class="item card">
+										<img src="images/tree.jpeg" class="card-img-top img-fluid h-100">
+									</div>
+									<div class="item card">
+										<img src="images/suvichar.jpeg" class="card-img-top img-fluid h-100">
+									</div>
+									<div class="item card">
+										<img src="images/nadep.jpeg" class="card-img-top h-100">
+									</div>
+									<div class="item card" style="height: 180px;">
+										<img src="images/solarwater2.jpeg" class="card-img-top h-100">
+									</div>
+									<div class="item card">
+										<img src="images/prise.jpeg" class="card-img-top h-100">
+									</div>
+									<div class="item card">
+										<img src="images/road.jpeg" class="card-img-top img-fluid h-100">
+									</div>
+
+								</div>
+
+							</div>
+
+							<div>
+								<h3 class="underline">गावाचे आगळेवेगळे उपक्रम</h3>
+								<ol class="py-3">
+
+									<li>गावात एक पिठाची गिरणी आहे. जे ग्रामपंचायतचा कर १००% भरतात त्यांना वर्षभर दळण मोफत दळून मिळते.</li>
+									<li>गावात तिन प्रकारचे पाणी उपलब्ध आहे.
+										<ol type="i">
+											<li>पिण्याचे RO चे पाणी</li>
+											<li>वापरायचे पाणी</li>
+											<li>गरम पाणी </li>
+										</ol>
+
+										पिण्याचे RO चे पाणी प्रत्येक दिवशी २० ली मोफत तर ATM द्वारे चोवीस तास पाणी मिळते. वापरायचे पाणी नळाद्वारे पाणी उपलब्ध. गरम पाणी सोलर वॉटर हिटर ने ATM व्दारे सकाळी 6 ते 8 पर्यत अलब्ध आहे.
+									</li>
+									<li>कचरा व्यावस्थापनासाठी नाडेप/गांडुळखत प्रकल्पा पासून कंपोस्ट खत तयार केले जाते.</li>
+									<li> लोकसंखेच्या तिप्पट गावात फळझाडे आहेत.</li>
+									<li>गावात सुसज्य समाजमंदिर आहे.</li>
+									<li>ठिकठिकाणी वयोवृद्धांना बसण्यासाठी बाके आहेत.</li>
+									<li> गावाचे दोन ठिकाणी सर्व सांडपाणी जमा केलेले आहेत, ते पाणी शेतीला वापरतात.</li>
+									<li> गावात १ली ते ४थी पर्यंत जि प ची शाळा असून शाळा डिजिटल व सेमी इंग्रजी शिक्षण गुणवत्ता पूर्ण दिले जाते .</li>
+									<li> गावात सात दिवसाचा महाशिवरात्रीचासप्ताह होत असतो </li>
+									<li> गावात प्रत्येक नागरिकाचा वाढदिवस साजरा केला जातो. व वाढदिवसाला प्रत्येक नागरिक ५ झाडे ग्रामपंचायत वृक्ष बॅक मध्ये देत असतो</li>
+									<li> सगळ्या संस्थांच्या खेळीमेळीच्या वातावरणात निवडणूका पार पडतात. </li>
+									<li> प्रशासकिय सेवेत काम करणारे अधिकारी व कर्मचारी यांना सन्मानपत्र देऊन पुरस्कार दिला जातो.</li>
+									<li> घनकचरा व्यवस्थापनासाठी प्रत्येक खातेदारास पर्यावरण पिशवी दिली जाते.</li>
+									<li> गावात सगळीकडे पेव्हर ब्लॉक बसविण्यात आलेले आहेत.</li>
+									<li> गाव तंटामुक्त , निर्मलग्राम पारितोषिक विजेते आहेत.</li>
+									<li> ग्रामपंचायतचे वार्षिक उत्पन्न ५ लाख रूपये आहेत.</li>
+									<li> शिक्षक दिनाला पास १०वी व १२वी मुली व मुलांचा सत्कार घेतला जातो </li>
+									<li> सर्व महापुरुषांची जयंती ऐकत्रीत ग्रामपंचायत कार्यालया मध्ये साजरी केली जाते </li>
+									<li> गाव दैवत जोतिबा याञा दरवर्ष साजरी केली जाते.</li>
+									<li> गावात पांडव कालीन गणपती मंदिर आहे.</li>
+									<li> गावातील दोनी अंगणवाडी सुसज्य व डिजीटल (LED TV) सुविधा ऊपलब्ध आहेत. तसेच विषमुक्त व सेंद्रिय भाजीपाला आधुनिक परसबागेत पिकवुन मुलांना पोषन आहारा मध्ये दिला जातो</li>
+									<li> गावा मध्ये ग्रामविकास मंच्याची स्थापना केली आहे त्या मध्ये गावामधील शिक्षक व ग्रामस्थ गावाची दर रविवारी दोन तास स्वच्छता करतात</li>
+									<li>अंगणवाडीतील प्रत्येक मुलाचा वाढदिवस शाळेत साजरा केला जातो दरवर्षी स्नेह संमेलन साजरा केल जाते.</li>
+									<li> मनरेगा अंतर्गत 42मजुर काम करतात.</li>
+									<li> गावात महिलांना कपडे धुवन्यासाठी धोबी घाट बांधन्यात आला आहे.</li>
+									<li> गावातील महिलांनी ऐकत्र येत सार्वजनिक, "प्रगती महिला बचत गट"" स्थापन केला आहे</li>
+									<li> गावातील सर्व शासकीय कार्यालय हे सौर उर्जा वर चालते गावाचा 1 kwचा सौर उर्जा प्रकल्प कार्यन्वीत आहे</li>
+									<li> गावात सर्व ग्रामस्थ यांनी गरम पाण्याचे सोलर वॉटर हिटर बसले आहेत </li>
+									<li> गावातील ज्या ग्रामस्थ यांची आर्थिक परीस्थीती आहे त्यांना गावातील 5 (पाच ) ठीकाणी सार्वजनीक सोलर वॉटर हिटर बसवले आहे त्यांना गरम पाणी मोफत मिळते</li>
+
+								</ol>
+
+							</div>
+
+						</div>
+
+					</div>
+					<!-- ================================================================
+				  					    About Village Tab End
+				  ================================================================ -->
+
+
+					<!-- ================================================================
+				  					    Village Work Tab
+				  ================================================================ -->
+					<div class="tab-pane fade" id="village-worker" role="tabpanel" aria-labelledby="profile-tab">
+
+						<!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-4">
+						<div class="col">
+						    <div class="card box-shadow-2 h-100">
+						      <img src="images/Untitled-1.png" class="card-img-top" alt="...">
+						      <div class="card-body text-center">
+						        <h5 class="card-title">Card title</h5>
+						        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						      </div>
+						    </div>
+						</div>
+						<div class="col">
+						    <div class="card box-shadow-2 h-100">
+						      <img src="images/Untitled-1.png" class="card-img-top" alt="...">
+						      <div class="card-body text-center">
+						        <h5 class="card-title">Card title</h5>
+						        <p class="card-text">This is a short card.</p>
+						      </div>
+						    </div>
+						</div>
+					</div> -->
+
+						<div>
+
+							<div>
+
+								<div class="py-3">
+									<h3 class="underline">कार्यकाळी मंडळ </h3>
+									<div class="py-3">
+										<table class="table table-striped">
+											<thead class="bg-light">
+												<tr>
+													<th scope="col">#</th>
+													<th scope="col">नाव </th>
+													<th scope="col">पद</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">1</th>
+													<td>सौ. रोहीणी तानाजी सोनवणे </td>
+													<td>सरपंच</td>
+												</tr>
+												<tr>
+													<th scope="row">2</th>
+													<td>श्री. सचिन अशोक सपकळ </td>
+													<td>उपसरपंच</td>
+												</tr>
+												<tr>
+													<th scope="row">3</th>
+													<td>श्री. ज्ञानेश्वर सुखदेव घाडगे </td>
+													<td>ग्रा. पं. सदस्य </td>
+												</tr>
+												<tr>
+													<th scope="row">4</th>
+													<td>सौ. अश्वीनी रविराज सपकळ </td>
+													<td>ग्रा. पं. सदस्य </td>
+												</tr>
+												<tr>
+													<th scope="row">5</th>
+													<td>सौ. गितांजली समीर वाघमारे</td>
+													<td>ग्रा. पं. सदस्य </td>
+												</tr>
+												<tr>
+													<th scope="row">6</th>
+													<td>सौ. सारीका सचिन पवार</td>
+													<td>ग्रा. पं. सदस्य </td>
+												</tr>
+												<tr>
+													<th scope="row">7</th>
+													<td>सौ. उर्मिला शिवाजी सपकळ</td>
+													<td>ग्रा. पं. सदस्य </td>
+												</tr>
+												<tr>
+													<th scope="row">8</th>
+													<td>श्री. रविंद्र श्रीरंग सपकळ</td>
+													<td>तंटामुक्ती अध्यक्ष</td>
+												</tr>
+												<tr>
+													<th scope="row">9</th>
+													<td>सौ. सुनिता किरण सपकाळ</td>
+													<td>पोलीस पाटील</td>
+												</tr>
+												<tr>
+													<th scope="row">10</th>
+													<td>श्री. जाधव ए टी</td>
+													<td>ग्रामसेवक </td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div>
+									<h3 class="underline">ग्रामविकास मंच सक्रीय सदस्य</h3>
+
+									<div class="row row-cols-1 row-cols-lg-2 py-3">
+										<div class="col">
+
+											<table class="table table-hover table-light">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">नाव </th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>श्री. हनुमंत अर्जुन सपकळ (सर )</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>श्री. शिवाजी जगन्नाथ सपकळ</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>श्री. शिवाजी नथु सपकळ</td>
+													</tr>
+													<tr>
+														<th scope="row">4</th>
+														<td>श्री. अनिल गोपिचंद सपकळ</td>
+													</tr>
+													<tr>
+														<th scope="row">5</th>
+														<td>श्री. शत्रुघ्न तुकाराम घाडगे</td>
+													</tr>
+													<tr>
+														<th scope="row">6</th>
+														<td>श्री. तुषार दिलीप सपकळ</td>
+													</tr>
+													<tr>
+														<th scope="row">7</th>
+														<td>श्री. महेश मधुकर सपकळ</td>
+													</tr>
+													<tr>
+														<th scope="row">8</th>
+														<td>श्री. महादेव विठ्ठल सपकळ</td>
+													</tr>
+													<tr>
+														<th scope="row">9</th>
+														<td>श्री. ऋषीकेश शिवाजी सोनवणे </td>
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+
+										<div class="col">
+
+											<table class="table table-hover table-light">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">नाव </th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>श्री. सत्यजित नामदेव भुजबळ</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>श्री. पृथ्वीराज वामन सपकळ</td>
+													</tr>
+													<tr>
+														<th scope="row">3</th>
+														<td>श्री. अंकुश बाळासो जाधव </td>
+													</tr>
+													<tr>
+														<th scope="row">4</th>
+														<td>श्री. सुनिल लहु भुजबळ</td>
+													</tr>
+													<tr>
+														<th scope="row">5</th>
+														<td>श्री. गणेश राजेंद्र सपकळ </td>
+													</tr>
+													<tr>
+														<th scope="row">6</th>
+														<td>श्री. सचिन प्रकाश पवार </td>
+													</tr>
+													<tr>
+														<th scope="row">7</th>
+														<td>श्री. धनंजय आप्पा थोरात</td>
+													</tr>
+													<tr>
+														<th scope="row">8</th>
+														<td>श्री. केशव पोपट अभंगराव </td>
+													</tr>
+													<tr>
+														<th scope="row">9</th>
+														<td>श्री. राहुल सुभाष घाडगे</td>
+													</tr>
+												</tbody>
+											</table>
+
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+					<!-- ================================================================
+				  					    Village Worker Tab End
+				  ================================================================ -->
+
+					<!-- ================================================================
+				  					    Corona Tab
+				  ================================================================ -->
+					<div class="tab-pane fade" id="corona" role="tabpanel" aria-labelledby="contact-tab">
+						<div class="">
+
+							<div class="corona-galari py-4 row row-cols-2 row-cols-lg-4">
+								<div class="col">
+									<img src="images/corona1.jpeg" class="img-fluid corona-img" alt="">
+								</div>
+								<div class="col">
+									<img src="images/corona2.jpeg" class="img-fluid corona-img" alt="">
+								</div>
+								<div class="col">
+									<img src="images/corona3.jpeg" class="img-fluid corona-img" alt="">
+								</div>
+								<div class="col">
+									<img src="images/corona4.jpeg" class="img-fluid corona-img" alt="">
+								</div>
+							</div>
+							<div class="pt-4">
+								<h3 class="underline">कोरोनावरील लसीचे लसीकरण ऐका दिवसात केले पूर्ण</h3>
+								<p class="pt-3">जशी निवडणुकीची तयारी वॉर्ड नुसार केली जाते त्याप्रमाणे वय वर्ष ४५ वरील नागरीकांना शासनाच्या माध्यमातुन कोविड लसीकरन हे प्रत्येक नागरीकांपर्यत पोहचवण्यासाठी गावातील प्रत्येक युवा कार्यक्रत्यांनी
+									आपल्या घरातील प्रत्येक जेष्ठ नागरीकाला युवकांनी लसीकरना स्थळी आणत होते हे चित्र जणु ग्रामपंचायत निवडणुके प्रमाणे मतदान १००% व्हावे असे होते. त्यामुळेच लसिकरन ही १००%
+									झाले. म्हणुन तर सपकळवाडी गाव हे आदर्श गाव म्हणुन ओळखले जाते, कारण गावानी ठरवल की १००% कार्यक्रम होणारच... </p>
+							</div>
+							<div class="py-3">
+								<h3 class="underline">लसीकरणाचा शुभारंभ </h3>
+								<p class="pt-3">श्री.दिलीप पवार सह्हाय्यक पोलिस निरिक्षक वालचंदनगर ( जंक्शन ) यांचे शुभ हस्ते झाला.<br>
+									यावेळी मा श्री. विजयकुमार परीट साहेब गटविकास अधीकारी पंचायत समीती इंदापुर, मा. सचिन सपकळ सदस्य नियोजन समिती पुणे / उपसरपंच सपकळवाडी,
+									सौ. रोहीणी सोनवणे (सरपंच) सपकळवाडी, मा. श्री. डॉ. प्रशांत महाजन ता. वैद्यकिय अधिकारी, सौ. मेघा लोंढे वैद्यकिय अधिकारी सणसर,
+									श्री. किरण मोरे विस्तार अधिकारी पं स इंदापुर, ग्रा सदस्य अश्वीनी सपकळ, सारीका पवार, उर्मीला सपकळ, ज्ञानेश्वर घाडगे शिवाजी ज सपकळ, शिवाजी न सपकळ,
+									अनिल सपकळ, तानाजी सोनवणे, शत्रुघ्न घाडगे, तुषार सपकळ, महेश सपकळ, बाळासो सपकळ, महादेव सोनवणे, धनंजय सावंत उपस्थीतीत होते.<br>
+								</p>
+								<p>
+									प्राथमीक आरोग्य क्रेंद्राचे सर्व आरोग्यअधीकारी यांनी मोलाचे सहकार्य केले.<br>
+									श्री. नामदेव कुगणे समुदाय आरोग्य अधिकारी.<br>
+									श्री. पद्माकर धर्माधिकारी आ. सेवक<br>
+									सौ. संगिता कोकरे आ. सेविका<br>
+									आशा स्वयंसेविका रेखा मोरे, स्वाती पवार, रोहिणी चव्हाण. <br>
+								</p>
+								<p>३१९ पैकी ३१९<br>
+									१००% लसीकरण<br>
+									४५ पेक्षा जास्त वय<br>
+								</p>
+							</div>
+
+						</div>
+					</div>
+					<!-- ================================================================
+				  					    Corona Tab
+				  ================================================================ -->
+
+					<!-- ================================================================
+				  					    Contact Tab
+				  ================================================================ -->
+					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+
+					</div>
+					<!-- ================================================================
+				  					    Contact Tab
+				  ================================================================ -->
+
+					<!-- <div>
+						All Text color: #0d4f89
+						Underline color: #4fc7ff
+					</div> -->
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+		<section class="container-fluid">
+			<div class="container">
+
+
+			</div>
+
+		</section>
+
+		<footer id="footer" class="container-fluid" style="background-color: #00000e;">
+			<div class="container">
+
+				<div id="footer-inline" class="py-4">
+					<div class="row row-cols-1 row-cols-lg-2 text-center text-white">
+
+						<div class="col">
+							<h5 style="color: #4fc7ff;">सौ. रोहीणी तानाजी सोनवणे </h5>
+							<div>सरपंच</div>
+							<p>८३२९९६९१६९</p>
+						</div>
+
+						<div class="col">
+							<h5 style="color: #4fc7ff;">श्री. सचिन अशोक सपकळ </h5>
+							<div>उपसरपंच</div>
+							<p>९८५०६५०००९ / ९४२३०९२६५९</p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="text-center text-white shape-line py-3">
+					<p>Copyright <i class="far fa-copyright text-primary"></i> 2021 | Made By <a href="https://www.websparkx.in/" class="text-decoration-none h6 text-primary"><b>WebSparkX</b></a> | All Rights Reserved</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+
+
+	<!-- Owl Carousel JS -->
+	<script src="JS/sapkalwadi.js"></script>
+	<script src="JS/owl.carousel.min.js"></script>
+
+</body>
+
 </html>
