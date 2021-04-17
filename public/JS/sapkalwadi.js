@@ -31,6 +31,10 @@ $(document).ready(function() {
 
   });
 
+  $(".nav-link").click(function () {
+    $(".collapse").removeClass("show");
+  });
+
 });
 
 $(window).scroll(function() {
